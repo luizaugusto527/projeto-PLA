@@ -22,7 +22,8 @@ export class CalcComponent implements OnInit {
       hours_ubatuba: new FormControl(),
       hours_ilha: new FormControl(),
       hours_trindade: new FormControl(),
-      total_wood: new FormControl()
+      total_wood: new FormControl(),
+      total_hours: new FormControl()
 
     })
    }
@@ -32,7 +33,7 @@ export class CalcComponent implements OnInit {
    
   }
   calc():void{
-    this.teste.value.total_wood *= 1000
+   
     
     const conta = this.teste.value
     this.solver.setSolver(conta).subscribe({
